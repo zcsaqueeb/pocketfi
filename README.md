@@ -1,29 +1,30 @@
+Absolutely! Here’s the updated version without the Telegram groups:
+
+---
+
 # PocketFi - Auto Claim Bot
 
-🔗 **Referral Link**: [PocketFi](https://t.me/pocketfi_bot/Mining?startapp=5914982564)
-
-## 📢 Telegram Group
-
-Join our Telegram group to stay updated and get instructions on how to use this tool:
-
-- [Smart Airdrop](https://t.me/smartairdrop2120)
-- [Smart Airdrop - Channel](https://t.me/smartairdrop_channel)
+🔗 **Referral Link**: [PocketFi](https://t.me/pocketfi_bot/Mining?startapp=6173601862)
 
 ## 🌟 Features
 
-| Feature                   | Status  | Description                  |
-| ------------------------- | ------- | ---------------------------- |
-| Auto Claim                | Default | Claim points when available  |
-| Auto Activate Daily Boost | Default | Use boost to get more points |
+| **Feature**                 | **Status** | **Description**                 |
+| --------------------------- | ---------- | --------------------------------|
+| Auto Claim                  | Default    | Automatically claim points when available |
+| Auto Activate Daily Boost   | Default    | Use boost to get more points daily |
 
 ## 🚀 Run File
 
-| Run with Proxy                   | Run without Proxy   |
-| -------------------------------- | ------------------- |
-| `bot-proxy.py` `data-proxy.json` | `bot.py` `data.txt` |
+| **Run with Proxy**                      | **Run without Proxy**       |
+| --------------------------------------- | --------------------------- |
+| `python bot-proxy.py` with `data-proxy.json`   | `python bot.py` with `data.txt`    |
 
-## ⚠️ Note
+## ⚠️ Notes
 
-- Get auth data (`query_id=... /user=...`) in the `Application` tab in DevTools.
-- Auto features: Change `false` to `true` in the `config.json` file.
-- Supported commands: `/run_bot` `/query_id` `/proxy` `/proxy_web` (Join group to use these commands).
+1. Obtain auth data (`query_id=... /user=...`) in the `Application` tab in DevTools.
+2. Enable auto features by changing `false` to `true` in the `config.json` file.
+3. Supported commands: `/run_bot`, `/query_id`, `/proxy`, `/proxy_web`.
+
+---
+
+If there's anything else you need adjusted, just let me know!
