@@ -5,7 +5,6 @@ import requests
 from colorama import Fore, Style, init
 from datetime import datetime
 import json
-import brotli
 from tabulate import tabulate
 
 init(autoreset=True)
@@ -13,19 +12,17 @@ init(autoreset=True)
 class PocketFi:
     def __init__(self):
         self.line = Fore.WHITE + "~" * 50
-
         self.banner = f"""
-        {Fore.BLUE}Smart Airdrop {Fore.WHITE}PocketFi Auto Claimer
+        {Fore.BLUE}✨ Smart Airdrop {Fore.WHITE}PocketFi Auto Claimer ✨
         """
         
         self.api_url = {
-            "mining_info": "https://gm.pocketfi.org/mining/getUserMining",
+            "mining_info": "https://gm.pocketfi.org/mining/getUser Mining",
             "claim_mining": "https://gm.pocketfi.org/mining/claimMining",
             "daily_boost": "https://bot2.pocketfi.org/boost/activateDailyBoost"
         }
 
     def clear_terminal(self):
-        """Clear the terminal screen."""
         os.system("cls" if os.name == "nt" else "clear")
 
     def headers(self, data):
@@ -34,7 +31,7 @@ class PocketFi:
             "Telegramrawdata": f"{data}",
             "Origin": "https://pocketfi.app",
             "Referer": "https://pocketfi.app/",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+            "User -Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
         }
 
     def mining_info(self, data):
@@ -57,7 +54,6 @@ class PocketFi:
         print(f"{Fore.LIGHTBLACK_EX}[{now}]{Style.RESET_ALL} {msg}")
 
     def display_status(self, account_data):
-        """Display the status of each account in a formatted table."""
         table_data = [
             [
                 Fore.CYAN + str(acc["no"]) + Style.RESET_ALL,
@@ -151,7 +147,6 @@ class PocketFi:
             wait_time = 30 * 60  # Change to 30 minutes
             self.log(f"{Fore.YELLOW}Waiting for {int(wait_time/60)} minutes!")
             time.sleep(wait_time)
-
 
 if __name__ == "__main__":
     try:
